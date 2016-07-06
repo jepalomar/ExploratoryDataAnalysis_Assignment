@@ -1,6 +1,18 @@
 # Assignment 
 The overall goal of this assignment is to explore the National Emissions Inventory database and see what it say about fine particulate matter pollution in the United states over the 10-year period 1999–2008. You may use any R package you want to support your analysis.
 
+## Code
+
+The R code files to generate the plots are:
+
+* [plot1.R](https://github.com/jepalomar/ExploratoryDataAnalysis_Assignment/blob/master/plot1.R)
+* [plot2.R](https://github.com/jepalomar/ExploratoryDataAnalysis_Assignment/blob/master/plot2.R)
+* [plot3.R](https://github.com/jepalomar/ExploratoryDataAnalysis_Assignment/blob/master/plot3.R)
+* [plot4.R](https://github.com/jepalomar/ExploratoryDataAnalysis_Assignment/blob/master/plot4.R)
+* [plot5.R](https://github.com/jepalomar/ExploratoryDataAnalysis_Assignment/blob/master/plot5.R)
+* [plot6.R](https://github.com/jepalomar/ExploratoryDataAnalysis_Assignment/blob/master/plot6.R)
+
+
 ## Data
 
 Fine particulate matter (PM2.5) is an ambient air pollutant for which there is strong evidence that it is harmful to human health. In the United States, the Environmental Protection Agency (EPA) is tasked with setting national ambient air quality standards for fine PM and for tracking the emissions of this pollutant into the atmosphere. Approximatly every 3 years, the EPA releases its database on emissions of PM2.5. This database is known as the National Emissions Inventory (NEI).
@@ -49,36 +61,36 @@ You must address the following questions and tasks in your exploratory analysis.
 
 * **Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.**
  
-We can see from the following plot that total emissions of PM2.5 in the United States have decreased in the time period studied.
+We can see from the following plot that total emissions of PM2.5 in the United States have decreased in the time period studied. (See code in [plot1.R](https://github.com/jepalomar/ExploratoryDataAnalysis_Assignment/blob/master/plot1.R))
 
 ![alt text](https://github.com/jepalomar/ExploratoryDataAnalysis_Assignment/blob/master/plot1.png "Total Emissions")
 
 * **Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008? Use the base plotting system to make a plot answering this question.**
   
-We can see from the following plot that total emissions of PM2.5 in Baltimore have decreased in the 1999-2008 period, although there was an increase in the 2002-2005 period.
+We can see from the following plot that total emissions of PM2.5 in Baltimore have decreased in the 1999-2008 period, although there was an increase in the 2002-2005 period. (See code in [plot2.R](https://github.com/jepalomar/ExploratoryDataAnalysis_Assignment/blob/master/plot2.R))
 
 ![alt text](https://github.com/jepalomar/ExploratoryDataAnalysis_Assignment/blob/master/plot2.png "Baltimore Total Emissions")
 
 * **Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999–2008 for Baltimore City? Which have seen increases in emissions from 1999–2008? Use the ggplot2 plotting system to make a plot answer this question.** 
   
-We can see in the following figure that emissions from non-road, on-road and nonpoint sources have decreased in the time period studied. For these three sources there was no significant change between 2002 and 2005. On the contrary, emissions from point sources increased substantially in the 1999-2005 period, then going down in 2008 to levels similar to those in 1999
+We can see in the following figure that emissions from non-road, on-road and nonpoint sources have decreased in the time period studied. For these three sources there was no significant change between 2002 and 2005. On the contrary, emissions from point sources increased substantially in the 1999-2005 period, then going down in 2008 to levels similar to those in 1999. (See code in [plot3.R](https://github.com/jepalomar/ExploratoryDataAnalysis_Assignment/blob/master/plot3.R))
 
 ![alt text](https://github.com/jepalomar/ExploratoryDataAnalysis_Assignment/blob/master/plot3.png "Baltimore emissions by source")
 
 * **Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?** 
   
-Coal combustion-related emissions were more or less constant in the 1999-2005 period. But in the 2005-2008 period a significant reduction took place, as can be seen in the following figure.
+Coal combustion-related emissions were more or less constant in the 1999-2005 period. But in the 2005-2008 period a significant reduction took place, as can be seen in the following figure. (See code in [plot4.R](https://github.com/jepalomar/ExploratoryDataAnalysis_Assignment/blob/master/plot4.R))
 
 ![alt text](https://github.com/jepalomar/ExploratoryDataAnalysis_Assignment/blob/master/plot4.png "Total coal combustion emissions")
 
 * **How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?** 
 
-  Emissions from motor vehicle sources have decreased in the time period studied, as can be seen in the following figure.
+  Emissions from motor vehicle sources have decreased in the time period studied, as can be seen in the following figure. (See code in [plot5.R](https://github.com/jepalomar/ExploratoryDataAnalysis_Assignment/blob/master/plot5.R))
 
 ![alt text](https://github.com/jepalomar/ExploratoryDataAnalysis_Assignment/blob/master/plot5.png "Total Baltimore vehicle emissions")
 
 * **Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (fips == "06037"). Which city has seen greater changes over time in motor vehicle emissions?** 
   
-From the following figure we see that emissions in Los Angeles were significantly higher than those in Baltimore, and so were their changes in the time period studied. However, if we look at relative changes with respect to the emissions values in 1999, Baltimore relative changes were higher.
+From the following figure we see that emissions in Los Angeles were significantly higher than those in Baltimore, and so were their changes in the time period studied. However, if we look at relative changes with respect to the emissions values in 1999, Baltimore relative changes were higher. (See code in [plot6.R](https://github.com/jepalomar/ExploratoryDataAnalysis_Assignment/blob/master/plot6.R))
 
 ![alt text](https://github.com/jepalomar/ExploratoryDataAnalysis_Assignment/blob/master/plot6.png "Baltimore and LA vehicle emissions")
